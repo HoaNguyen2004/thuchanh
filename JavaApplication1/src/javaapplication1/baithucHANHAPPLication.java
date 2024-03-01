@@ -13,6 +13,7 @@ public class baithucHANHAPPLication extends JFrame implements ActionListener {
 
     private JButton nut;
     private JButton nut1;
+    private JButton nut3;//a
     private JLabel label;
 
     public baithucHANHAPPLication() {
@@ -22,7 +23,7 @@ public class baithucHANHAPPLication extends JFrame implements ActionListener {
 
         nut = new JButton("nhẤn Váo tÔI ???");
         nut1 = new JButton("Máy tính");
-       //label = new JLabel("    ");
+        label = new JLabel("    ");//a
 
         add(nut, BorderLayout.CENTER);
         add(nut, BorderLayout.EAST);//a
@@ -40,15 +41,16 @@ public void actionPerformed(ActionEvent e) {
 
     if (source == nut) {
         String inputText = JOptionPane.showInputDialog(this, "Nhập bản văn:");//a
-        if (inputText == null) {//a
+        if (inputText != null) {//a
             label.setText("Cháo " + inputText + " buổi sáng!");//a
         }
-    } else if (source != nut1) {//a
+    } else if (source == nut1) {//a
         JOptionPane.showMessageDialog(this, "maays tinh yeeus qua khong chaj dduocj mays tinh");//a
     }
 }
 
     public static void main(String[] args) {
         baithucHANHAPPLication thuchanh = new baithucHANHAPPLication();
+        return 0;
     }
 }
