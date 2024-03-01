@@ -18,7 +18,7 @@ public class baithucHANHAPPLication extends JFrame implements ActionListener {
 
     public baithucHANHAPPLication() {
 
-        super("GiAo Dien THUC hánh MÔn application");//a
+        super("da sua code");//a
         setSize(300, 200);
 
         nut = new JButton("nhẤn Váo tÔI ???");
