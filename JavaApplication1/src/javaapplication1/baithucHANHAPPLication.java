@@ -40,10 +40,10 @@ public void actionPerformed(ActionEvent e) {
 
     if (source == nut) {
         String inputText = JOptionPane.showInputDialog(this, "Nhập bản văn:");//a
-        if (inputText != null) {//a
+        if (inputText == null) {//a
             label.setText("Cháo " + inputText + " buổi sáng!");//a
         }
-    } else if (source == nut1) {//a
+    } else if (source != nut1) {//a
         JOptionPane.showMessageDialog(this, "maays tinh yeeus qua khong chaj dduocj mays tinh");//a
     }
 }
