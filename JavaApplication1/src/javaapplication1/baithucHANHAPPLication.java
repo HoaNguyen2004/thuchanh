@@ -22,7 +22,7 @@ public class baithucHANHAPPLication extends JFrame implements ActionListener {
 
         nut = new JButton("nhẤn Váo tÔI ???");
         nut1 = new JButton("Máy tính");
-        label = new JLabel("    ");//a
+       //label = new JLabel("    ");
 
         add(nut, BorderLayout.CENTER);
         add(nut, BorderLayout.EAST);//a
